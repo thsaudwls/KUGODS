@@ -33,15 +33,170 @@ class _BoardState extends State<Board> {
         child: Column(
           children: [
             Padding(
-              padding:
-                  EdgeInsets.fromLTRB(screenw * 0.05, screenh * 0.01, 0, 0),
-              child: Text(
-                "인기 게시물",
-                style: TextStyle(fontWeight: FontWeight.w900, fontSize: 20),
+              padding: EdgeInsets.fromLTRB(0, screenh * 0.01, 0, 0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(top: screenh * 0.02),
+                    width: screenw * 0.9,
+                    child: Text(
+                      "🌸 인기 게시물 🌸",
+                      style:
+                          TextStyle(fontWeight: FontWeight.w900, fontSize: 20),
+                    ),
+                  ),
+                ],
               ),
             ),
-            
-            
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(0, screenh * 0.02, 0, 0),
+                child: Row(
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Container(
+                        margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
+                        height: 150,
+                        width: 200,
+                        decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(10),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Color.fromARGB(255, 192, 192, 192),
+                                blurRadius: 5.0,
+                                spreadRadius: 0,
+                                offset: Offset(0, 5),
+                              ),
+                            ]),
+                        child: Image.asset(
+                          'assets/images/001.jpeg',
+                          fit: BoxFit.fitWidth,
+                        ),
+                      ),
+                    ),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Container(
+                        margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
+                        height: 150,
+                        width: 200,
+                        decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Color.fromARGB(255, 192, 192, 192),
+                                blurRadius: 5.0,
+                                spreadRadius: 0,
+                                offset: Offset(0, 5),
+                              ),
+                            ]),
+                        child: Image.asset(
+                          'assets/images/002.jpeg',
+                          fit: BoxFit.fitWidth,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
+                      height: 150,
+                      width: 200,
+                      decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(15),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Color.fromARGB(255, 192, 192, 192),
+                              blurRadius: 5.0,
+                              spreadRadius: 0,
+                              offset: Offset(0, 5),
+                            ),
+                          ]),
+                    ),
+                    Container(
+                      margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
+                      height: 150,
+                      width: 200,
+                      decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(15),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Color.fromARGB(255, 192, 192, 192),
+                              blurRadius: 5.0,
+                              spreadRadius: 0,
+                              offset: Offset(0, 5),
+                            ),
+                          ]),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(
+              height: screenh * 0.05,
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  '🌱 주간 게시물 🌱',
+                  style: TextStyle(fontWeight: FontWeight.w900, fontSize: 20),
+                ),
+                Container(
+                  margin: EdgeInsets.only(top: screenh * 0.02),
+                  height: screenh * 0.25,
+                  width: screenw * 0.9,
+                  decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(15),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color.fromARGB(255, 192, 192, 192),
+                          blurRadius: 5.0,
+                          spreadRadius: 0,
+                          offset: Offset(0, 5),
+                        ),
+                      ]),
+                ),
+                Container(
+                  margin: EdgeInsets.only(top: screenh * 0.02),
+                  height: screenh * 0.25,
+                  width: screenw * 0.9,
+                  decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(15),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color.fromARGB(255, 192, 192, 192),
+                          blurRadius: 5.0,
+                          spreadRadius: 0,
+                          offset: Offset(0, 5),
+                        ),
+                      ]),
+                ),
+                Container(
+                  margin: EdgeInsets.only(top: screenh * 0.02),
+                  height: screenh * 0.25,
+                  width: screenw * 0.9,
+                  decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(15),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color.fromARGB(255, 192, 192, 192),
+                          blurRadius: 5.0,
+                          spreadRadius: 0,
+                          offset: Offset(0, 5),
+                        ),
+                      ]),
+                ),
+              ],
+            ),
           ],
         ),
       ),
