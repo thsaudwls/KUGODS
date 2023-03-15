@@ -59,7 +59,6 @@ class _HomeState extends State<Home> {
                         fontWeight: FontWeight.w600),
                   ),
                 ),
-                // ),
               ],
             ),
           )

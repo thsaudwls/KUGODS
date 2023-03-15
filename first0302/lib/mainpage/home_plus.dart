@@ -31,13 +31,18 @@ class _HomePlusState extends State<HomePlus> {
       ),
       backgroundColor: Color.fromARGB(255, 204, 157, 157),
       body: Column(children: <Widget>[
-        Text(
-          'check list',
-          style: TextStyle(color: Colors.white, fontSize: 20),
+        Padding(
+          padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+          child: Text(
+            'check list',
+            style: TextStyle(
+                color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),
+          ),
         ),
         Container(
           margin: EdgeInsets.fromLTRB(
-              screenw * 0.04, screenh * 0.07, screenw * 0.04, screenh * 0.03),
+              screenw * 0.045, screenh * 0.03, screenw * 0.045, screenh * 0.03),
+          height: screenh * 0.75,
           decoration: BoxDecoration(
               color: Colors.white,
               boxShadow: [
